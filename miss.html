@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Envelope Message</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgMusic" loop style="display:none;">
+    <source src="TorAdorerTane.mp3.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.getElementById("bgMusic");
+      let isPlaying = false;
+  
+      document.addEventListener("click", () => {
+        if (!isPlaying) {
+          audio.play();
+          isPlaying = true;
+        } else {
+          audio.pause();
+          isPlaying = false;
+        }
+      });
+    });
+  </script>
+  
+  
+
+  <div class="wrapper">
+    <div class="lid one"></div>
+    <div class="lid two"></div>
+    <div class="envelope"></div>
+    <div class="letter"><p> Sorrryyyyy 🥺 but,<br> I missss youuuuuuuu a lottttt !! <br> 👉🏻👈🏻😘💓💞 </p></div>
+  </div>
+
+</body>
+</html>
